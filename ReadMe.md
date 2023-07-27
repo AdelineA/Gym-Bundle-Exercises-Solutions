@@ -731,3 +731,99 @@ To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
 ## Exercise 2
 
 ```bash
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/footer)
+$ git add .
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/footer)
+$ git commit -m "adding footer on home page"
+[ft/footer 0000d10] adding footer on home page   
+ 2 files changed, 12 insertions(+), 1 deletion(-)
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/footer)
+$ git git add .
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/footer)
+$ git add .
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/footer)
+$ git commit -m "adding list to our footer"
+[ft/footer e693993] adding list to our footer
+ 1 file changed, 1 insertion(+)
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 717 bytes | 358.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   git@github.com:AdelineA/Gym-Git-Exercises-Solutions.git
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/AdelineA/Gym-Git-Exercises-Solutions/pull/new/ft/footer
+remote:
+To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/squashing)
+$ git merge --squash ft/footer 
+Updating 0242651..e693993
+Fast-forward
+Squash commit -- not updating HEAD
+ ReadMe.md | 6 +++++-
+ home.html | 8 ++++++++
+ 2 files changed, 13 insertions(+), 1 deletion(-)
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/squashing)
+$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ReadMe.md
+        modified:   home.html
+
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 102d95f] footer changes squashing
+ 2 files changed, 13 insertions(+), 1 deletion(-)
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 489 bytes | 122.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   git@github.com:AdelineA/Gym-Git-Exercises-Solutions.git
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/AdelineA/Gym-Git-Exercises-Solutions/pull/new/ft/squashing
+remote:
+To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+ 
+```
