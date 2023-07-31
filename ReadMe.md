@@ -827,3 +827,46 @@ To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
  * [new branch]      ft/squashing -> ft/squashing
  
 ```
+
+# Bundle 5
+## Exercise 1
+
+```bash
+EDELINE@Mugunga MINGW64 /e/Git exercise (ft/squashing)
+$ git checkout main
+Switched to branch 'main'
+EDELINE@Mugunga MINGW64 /e/Git exercise (main)
+$ git pull origin main
+From github.com:AdelineA/Gym-Bundle-Exercises-Solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (main)
+$ git add index.html
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (main)
+$ git commit -m "renaming home.html to index.html"
+[main 614c548] renaming home.html to index.html
+ 1 file changed, 25 insertions(+)
+ create mode 100644 index.html
+
+EDELINE@Mugunga MINGW64 /e/Git exercise (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 240 bytes | 120.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   git@github.com:AdelineA/Gym-Git-Exercises-Solutions.git
+To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
+   0242651..614c548  main -> main
+```
+
