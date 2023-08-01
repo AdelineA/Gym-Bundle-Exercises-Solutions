@@ -732,6 +732,7 @@ To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
 
 ```bash
 
+
 EDELINE@Mugunga MINGW64 /e/Git exercise (main)
 $ git checkout -b ft/footer
 Switched to a new branch 'ft/footer'
@@ -871,6 +872,7 @@ To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
 ```
 # Bundle 5
 ## Exercise 2
+
 ```bash
 
 EDELINE@Mugunga MINGW64 /e/git-cafe-exercise (main)
