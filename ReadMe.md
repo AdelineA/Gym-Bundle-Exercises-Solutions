@@ -868,5 +868,4 @@ remote: This repository moved. Please use the new location:
 remote:   git@github.com:AdelineA/Gym-Git-Exercises-Solutions.git
 To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
    0242651..614c548  main -> main
-```
 
