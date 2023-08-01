@@ -869,4 +869,27 @@ remote:   git@github.com:AdelineA/Gym-Git-Exercises-Solutions.git
 To github.com:AdelineA/Gym-Bundle-Exercises-Solutions.git
    0242651..614c548  main -> main
 ```
+# Bundle 5
+## Exercise 2
+```bash
 
+EDELINE@Mugunga MINGW64 /e/git-cafe-exercise (main)
+$ git add index.html
+
+EDELINE@Mugunga MINGW64 /e/git-cafe-exercise (main)
+$ git commit -m "changing the main title"
+[main 1a860ac] changing the main title        
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+EDELINE@Mugunga MINGW64 /e/git-cafe-exercise (main)
+$ git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.    
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 314 bytes | 157.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:AdelineA/git-cafe-exercise.git
+   d1d3f9c..1a860ac  main -> main
+```
