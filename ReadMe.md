@@ -895,3 +895,114 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To github.com:AdelineA/git-cafe-exercise.git
    d1d3f9c..1a860ac  main -> main
 ```
+
+# Bundle 6
+## Exercise 1
+```bash
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (main)
+$ git checkout -b new-feature
+Switched to a new branch 'new-feature'
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (new-feature)
+$ git add menu.html
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (new-feature)
+$ git commit -m "adding menu page to  the project"
+[new-feature 2b3b0db] adding menu page to  the project
+ 1 file changed, 17 insertions(+)
+ create mode 100644 menu.html
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (new-feature)
+$ git push 
+fatal: The current branch new-feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin new-feature
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (new-feature)
+$ git push origin new-feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 485 bytes | 121.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'new-feature' on GitHub by visiting:
+remote:      https://github.com/AdelineA/git-cafe-exercise/pull/new/new-feature
+remote:
+To github.com:AdelineA/git-cafe-exercise.git
+ * [new branch]      new-feature -> new-feature
+
+```
+# Bundle 6
+## Exercise 2
+```bash 
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (new-feature)
+$ git checkout -b bug-fix
+Switched to a new branch 'bug-fix'
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (bug-fix)
+$ git index-4.html
+git: 'index-4.html' is not a git command. See 'git --help'.
+
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (bug-fix)
+$ git add index-4.html
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (bug-fix)
+$ git commit -m "changing title from menu to contact"
+[bug-fix ec5af63] changing title from menu to contact
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (bug-fix)
+$ git push origin bug-fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 307 bytes | 16.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:AdelineA/git-cafe-exercise.git
+   2768048..ec5af63  bug-fix -> bug-fix
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (bug-fix)
+$
+
+```
+# Bundle 6
+## Exercise 3
+```bash
+ git checkout -b telephone
+Switched to a new branch 'telephone'
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (telephone)
+$ git add index-4.html
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (telephone)
+$ git commit -m "changig telephone"
+[telephone 7c8012b] changig telephone
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (telephone)
+$ git push origin telephone
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 290 bytes | 72.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'telephone' on GitHub by visiting:
+remote:      https://github.com/AdelineA/git-cafe-exercise/pull/new/telephone
+remote:
+To github.com:AdelineA/git-cafe-exercise.git
+ * [new branch]      telephone -> telephone
+
+EDELINE@Mugunga MSYS /e/git-cafe-exercise (telephone)
+$
+```
